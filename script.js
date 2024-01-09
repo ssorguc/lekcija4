@@ -16,3 +16,13 @@ let movieNightSnacks = [
     "Fruit Skewers",
     "Brownie Bites"
 ];
+
+let button = document.getElementById("header-btn");
+button.addEventListener("click", loadNewElm);
+
+function loadNewElm() {
+    let newElm = document.createElement("p");
+    newElm.innerHTML = "novi text";
+    newElm.className = "text-light";
+    document.getElementById("header-col").appendChild(newElm);
+}
